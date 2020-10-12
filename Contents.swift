@@ -55,3 +55,25 @@ let numbers3 = strings.map({Int($0)!})
 let filteredNumbers = numbers.filter({ $0 % 3 == 0 })
 print(filteredNumbers) // => [3, 6]
 
+///絶対値に変換
+let absSample = -100
+let absResult = abs(absSample)
+print(absResult)
+
+///filter
+let aaa = [1, 2, 3, 4, 5, 6]
+let filtered = aaa.filter ({ value in value % 2 == 0 })
+print(filtered)
+
+
+///要素絞り込み
+let contain = ["paiza", "paiz", "piz", "pai", "a"]
+var bbb = [String]()
+for i in 0..<contain.count {
+	if contain[i].contains("ai") {
+		bbb.append(contain[i])
+	}
+}
+print(bbb) /// => ["paiza", "paiz", "pai"]
+
+
