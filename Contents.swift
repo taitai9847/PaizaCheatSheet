@@ -1,10 +1,10 @@
 import Foundation
-//paiza用のチートシート
-
-///標準入力
-///標準入力から一行目を取得
-//let input_line = readLine()!
-
+////paiza用のチートシート
+//
+/////標準入力
+/////標準入力から一行目を取得
+////let input_line = readLine()!
+//
 ///String型で入ってくる値。ブランクで区切られている場合、split配列に代入
 //let split: [String] = input_line.components(separatedBy: " ")
 
@@ -30,7 +30,7 @@ print(array) //=> ["A", "B", "C"]
 
 ///Int型の配列の合計値はreduceを使うと早い
 var useReduce = nums.reduce(0, { $0 + $1 })
-print(useReduce)
+//print(useReduce)
 
 ///文字列の置換を行う
 var str: String = "ABC"
@@ -76,4 +76,28 @@ for i in 0..<contain.count {
 }
 print(bbb) /// => ["paiza", "paiz", "pai"]
 
+var score2 = 0
+var aaaa: Double = 4
 
+for i in 1...99 {
+	let hu = pow(Double(i), aaaa)
+	score2 += Int(hu)
+}
+print(score2)
+var score = 0
+var hhh = [Int]()
+
+for i in 1...20000 {
+	
+	if i % 3 == 0 {
+		let b = i
+		let c = String(i)
+		if c.contains("3") {
+			hhh.append(b)
+		}
+	}
+}
+//var useReduce = hhh.reduce(0, { $0 + $1 })
+
+
+print(useReduce)
